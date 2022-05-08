@@ -1,0 +1,140 @@
+@import url('https://fonts.googleapis.com/css2?family=Overpass:wght@400;500;700;900&display=swap');
+
+body {
+    color: white;
+    background-color: hsl(216, 12%, 8%);
+    font-family: 'Overpass', sans-serif;
+}
+
+.content {
+    display: flex;
+    align-items: center;
+}
+
+input[type="radio"] {
+    display: none;
+}
+
+.card {
+    margin: auto;
+    margin-top: 10em;
+    margin-bottom: 8em;
+    width: 25em;
+    height: 25.8em;
+    background-color: hsl(212, 22%, 13%);
+    border-radius: 2em;
+    color: hsl(217, 12%, 63%);
+}
+
+p {
+    font-weight: 400;
+    color: hsl(216, 12%, 54%);
+    font-size: 15px;
+    line-height: 1.7em;
+}
+
+h1 {
+    color: hsl(0, 0%, 100%);
+    font-weight: 500;
+    letter-spacing: 0.03em;
+    margin-bottom: 0;
+    margin-top: 1em;
+    font-size: 1.9em;
+}
+
+div:first-child {
+    margin: 2em;
+}
+
+span,
+label {
+    display: inline-block;
+    width: 1em;
+    height: 1em;
+    padding: 1em;
+    text-align: center;
+    border-radius: 50%;
+    background-color: hsl(224, 13%, 17%);
+}
+
+span:hover,
+label:hover {
+    cursor: pointer;
+    color: hsl(0, 0%, 100%);
+    background-color: hsl(216, 12%, 54%);
+}
+
+input[type="radio"]:checked+label {
+    color: hsl(0, 0%, 100%);
+    background-color: hsl(25, 97%, 53%);
+
+}
+
+.ratings .btn-color-change {
+    color: hsl(0, 0%, 100%);
+    background-color: hsl(25, 97%, 53%);
+}
+
+button {
+    display: block;
+    margin: 2em 0;
+    width: 100%;
+    height: 2.9em;
+    font-family: inherit;
+    background-color: hsl(25, 97%, 53%);
+    color: hsl(0, 0%, 100%);
+    border-radius: 3em;
+    font-size: 1em;
+    letter-spacing: 0.1em;
+}
+
+.ratings {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 2em;
+}
+
+button:hover {
+    background-color: hsl(0, 0%, 100%);
+    color: hsl(25, 97%, 53%);
+    cursor: pointer;
+}
+
+.hidden {
+    display: none;
+}
+
+.thank-you-img {
+    padding: 1em 5em;
+    width: 10em;
+}
+
+.thank-you-card {
+    text-align: center;
+}
+
+.thank-you-card p:first-of-type {
+    background-color: hsl(224, 13%, 17%);
+    color: hsla(25, 97%, 53%, 0.68);
+    border-radius: 2em;
+    width: 60%;
+    margin: 1em auto;
+    padding: 0.6em 0.5em 0.3em 0.5em;
+}
+
+@media (min-width: 375px) and (max-width: 767px) {
+
+    .card {
+        margin-left: 1em;
+        margin-right: 1em;
+    }
+
+    .thank-you-card {
+        margin-left: 2em;
+        margin-right: 2em;
+    }
+
+    /* div:first-child {
+        margin: 0;
+    } */
+}
