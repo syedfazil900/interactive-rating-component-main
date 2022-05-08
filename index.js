@@ -8,6 +8,8 @@ $('button').click(function(){
 })  
 $(':radio').click(function(){
     radioValue = $("input[name='rating']:checked").val();
-    $('#rating-text').text($("#rating-text").text().replace("4", radioValue));
+    $('#rating-text').text(`You selected ${radioValue} out of 5`)
 })
 
+
+// $('#rating-text').text($("#rating-text").text().replace("4", radioValue));
